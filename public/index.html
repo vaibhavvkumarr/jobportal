@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premium Job Alert Service | 5 Jobs Daily</title>
+  <meta name="description" content="Get 5 curated job opportunities every day in any role or industry, with direct application links, for ₹{{PRICE}}/month.">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#" class="brand"><span class="brand-mark">J</span>JobAlert<em>Pro</em></a>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="#jobForm" class="nav-cta">Get Access</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="pill"><span class="pulse"></span> Fresh roles delivered every morning</div>
+        <h1>Stop searching.<br><span class="serif">Start applying.</span></h1>
+        <p class="hero-text">Get <strong>5 hand picked job opportunities every day</strong> for the role you want, in any field, with direct application links, delivered straight to your WhatsApp.</p>
+        <ul class="trust">
+          <li><span>💬</span> Personal follow-up on WhatsApp</li>
+          <li><span>📄</span> Private resume storage</li>
+          <li><span>📲</span> 5 job links every morning</li>
+        </ul>
+        <div class="tags">
+          <span>Software &amp; IT</span><span>Data &amp; Analytics</span><span>QA &amp; Testing</span><span>Product &amp; Design</span><span>Sales &amp; Marketing</span><span>Finance &amp; Accounting</span><span>HR &amp; Operations</span><span>Customer Support</span><span>Freshers</span><span class="tag-more">+ any role you choose</span>
+        </div>
+      </div>
+
+      <form id="jobForm" class="form-card reveal">
+        <div class="form-head">
+          <h2>Get Premium Access</h2>
+          <p>Takes under a minute. We'll reach out on WhatsApp.</p>
+        </div>
+        <div class="field-row">
+          <label>Full Name<input name="name" required placeholder="Your full name" autocomplete="name"></label>
+          <label>WhatsApp Number<input name="whatsapp" required inputmode="tel" pattern="[\s\-+0-9]{10,16}" title="10-digit WhatsApp number" placeholder="10-digit number" autocomplete="tel"></label>
+        </div>
+        <label>Target Job Title<input name="jobTitle" required placeholder="e.g. Data Analyst, Sales Manager"></label>
+        <div class="field-row">
+          <label>Work Experience
+            <select name="experience" required>
+              <option value="" disabled selected>Select years</option>
+              <option>Fresher (0 years)</option>
+              <option>Less than 1 year</option>
+              <option>1–2 years</option>
+              <option>2–3 years</option>
+              <option>3–5 years</option>
+              <option>5–7 years</option>
+              <option>7–10 years</option>
+              <option>10–15 years</option>
+              <option>15+ years</option>
+            </select>
+          </label>
+          <label>Preferred Job Location<input name="location" required list="locations" placeholder="e.g. Bengaluru, Remote" autocomplete="off"></label>
+        </div>
+        <datalist id="locations">
+          <option value="Anywhere in India"><option value="Remote"><option value="Bengaluru"><option value="Hyderabad">
+          <option value="Pune"><option value="Mumbai"><option value="Delhi NCR"><option value="Noida"><option value="Gurugram">
+          <option value="Chennai"><option value="Kolkata"><option value="Ahmedabad"><option value="Jaipur"><option value="Chandigarh">
+          <option value="Kochi"><option value="Indore"><option value="Lucknow"><option value="Coimbatore">
+        </datalist>
+        <label class="file">Resume
+          <input id="resume" name="resume" type="file" required accept=".pdf,.doc,.docx">
+          <span class="drop">
+            <span class="drop-icon">↑</span>
+            <span class="drop-body"><span id="fileName" class="drop-text"><b>Upload your CV</b> or drag it here</span>
+            <small>PDF, DOC or DOCX · Max 5 MB</small></span>
+          </span>
+        </label>
+        <button id="payBtn" class="primary-btn full" type="submit">Get Premium Access</button>
+        <div id="status" class="status" role="status"></div>
+        <p class="terms">By submitting, you agree to be contacted on WhatsApp for payment (₹{{PRICE}}/month). No job guarantee.</p>
+      </form>
+    </section>
+
+    <section class="strip reveal">
+      <div><b>5</b><span>curated roles daily</span></div>
+      <div><b>1-tap</b><span>direct apply links</span></div>
+      <div><b>≈ ₹{{PER_DAY}}</b><span>per day</span></div>
+      <div><b>WhatsApp</b><span>delivery, no app needed</span></div>
+    </section>
+
+    <section id="how" class="how">
+      <div class="section-head reveal">
+        <div class="kicker">How it works</div>
+        <h2>From profile to daily <span class="serif">opportunities.</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><b>01</b><h3>Share your profile</h3><p>Upload your latest resume and tell us the job title you're targeting.</p></div>
+        <div class="step reveal"><b>02</b><h3>We connect on WhatsApp</h3><p>Our team messages you to confirm your role and complete the ₹{{PRICE}} payment.</p></div>
+        <div class="step reveal"><b>03</b><h3>Receive job links</h3><p>Get 5 relevant opportunities every day on WhatsApp, ready to apply.</p></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="phone reveal" aria-label="Sample WhatsApp job alert">
+        <div class="phone-head">
+          <span class="avatar">J</span>
+          <div><b>JobAlertPro</b><small>Sample daily alert</small></div>
+        </div>
+        <div class="chat">
+          <div class="bubble">
+            <div class="bubble-title">☀️ Today's 5 picks for <b id="sampleRole">Data Analyst</b></div>
+            <ol id="sampleJobs">
+              <li><b>Data Analyst</b><span>Fintech · Bengaluru</span></li>
+              <li><b>Business Analyst</b><span>SaaS · Remote</span></li>
+              <li><b>Analytics Associate</b><span>E-commerce · Gurugram</span></li>
+              <li><b>Junior Data Analyst</b><span>Consulting · Pune</span></li>
+              <li><b>MIS Analyst</b><span>Retail · Mumbai</span></li>
+            </ol>
+            <div class="bubble-link">↗ Direct apply links included</div>
+            <time>9:00 AM ✓✓</time>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-card reveal">
+        <div class="price-top">
+          <div>
+            <div class="card-label">Monthly Access</div>
+            <div class="price">₹{{PRICE}}<span>/month</span></div>
+            <div class="per-day">That's about ₹{{PER_DAY}} a day.</div>
+          </div>
+          <div class="badge">Premium</div>
+        </div>
+        <ul>
+          <li>5 hand picked job alerts every day</li>
+          <li>Direct application links</li>
+          <li>Filtered to your target role</li>
+          <li>Delivered on WhatsApp</li>
+        </ul>
+        <a class="primary-btn full" href="#jobForm">Join Now <span class="arrow">↑</span></a>
+        <p class="micro">For active jobseekers. No job or interview guarantee.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="section-head reveal">
+        <div class="kicker">FAQ</div>
+        <h2>Questions, <span class="serif">answered.</span></h2>
+      </div>
+      <div class="faq-list reveal">
+        <details open><summary>How many jobs will I receive?</summary><p>Up to 5 curated opportunities per day, based on the job title you provide.</p></details>
+        <details><summary>Which job roles do you cover?</summary><p>Any role, in any field: tech, data, testing, product, design, sales, marketing, finance, HR, operations, support and more, for freshers through to senior professionals. Just tell us your target job title.</p></details>
+        <details><summary>Where do I apply?</summary><p>Each alert includes a direct application link to the relevant employer or job portal.</p></details>
+        <details><summary>Is a job guaranteed?</summary><p>No. This is a paid job-alert and curation service, not a placement guarantee.</p></details>
+        <details><summary>How will I receive alerts?</summary><p>On the WhatsApp number you provide during registration.</p></details>
+        <details><summary>How do I pay?</summary><p>After you submit your details, we message you on WhatsApp with the payment details. Your alerts start once payment is confirmed.</p></details>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <div class="cta-card">
+        <div class="kicker">Your next move</div>
+        <h2>Your next role could be <span class="serif">one message away.</span></h2>
+        <p>Share your profile in under a minute. We'll take it from there.</p>
+        <div class="cta-actions">
+          <a class="primary-btn" href="#jobForm">Get Premium Access <span class="arrow">↑</span></a>
+          <a class="ghost-btn" href="https://wa.me/919911634954" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand"><span class="brand-mark">J</span>JobAlert<em>Pro</em></a>
+        <p>Hand-picked job opportunities, delivered to your WhatsApp every morning. For every role, in every field.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#jobForm">Get Access</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:kumarvaibhav349@gmail.com">kumarvaibhav349@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> JobAlertPro. All rights reserved.</span>
+      <span>Job alerts service only; no job or interview guarantee.</span>
+    </div>
+    <div class="footer-contact">
+      Questions? Write to us at <a href="mailto:kumarvaibhav349@gmail.com">kumarvaibhav349@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "premium-job-alert-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "start": "node server.js", "dev": "node server.js" },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.4.7",
+    "mongodb": "^7.7.0"
+  }
+}
