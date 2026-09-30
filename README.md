@@ -1,6 +1,6 @@
 # JobAlertPro — Premium Job Alert Website
 
-A production-oriented starter website for a ₹500/month job-alert service.
+A production-oriented starter website for a ₹499/month job-alert service.
 
 ## Included
 - Premium landing page
@@ -18,7 +18,7 @@ A production-oriented starter website for a ₹500/month job-alert service.
    npm install
 3. Copy `.env.example` to `.env`.
 4. Set the monthly price shown on the site (whole rupees):
-   PRICE_INR=500
+   PRICE_INR=499
 5. Set up MongoDB Atlas (free) and the admin password — see below.
 6. Start:
    npm start

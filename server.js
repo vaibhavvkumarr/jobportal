@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 const fs = require("fs");
 
 // Monthly price in rupees: change PRICE_INR in .env, then restart the server.
-const PRICE_INR = Number(process.env.PRICE_INR) || 500;
+const PRICE_INR = Number(process.env.PRICE_INR) || 499;
 if (!Number.isInteger(PRICE_INR) || PRICE_INR < 1) throw new Error("PRICE_INR must be a whole number of rupees, e.g. 500");
 const indexHtml = fs.readFileSync(path.join(__dirname, "public", "index.html"), "utf8")
   .replaceAll("{{PRICE}}", PRICE_INR.toLocaleString("en-IN"))
